@@ -55,16 +55,21 @@ body {
 }
 
 .input-btn-box input {
+  height: 5rem;
   flex: 1;
   padding: 1.2rem;
   border: none;
-  outline: none;
+  outline: 2px solid transparent;
   background-color: #fff;
   font-size: 1.6rem;
   letter-spacing: 0.3px;
   font-weight: 450;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.112) inset;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.112) inset;
   font-family: var(--font-family-2);
+}
+
+.input-btn-box input:focus {
+  border: 3px solid #353b48;
 }
 
 .input-btn-box input::placeholder {
@@ -95,8 +100,15 @@ h4 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  color: grey;
+  color: #353b48;
   text-align: center;
+}
+
+ul {
+  color: grey;
+  font-size: 1.6rem;
+  letter-spacing: 0.3px;
+  font-weight: 400;
 }
 
 ul li {
