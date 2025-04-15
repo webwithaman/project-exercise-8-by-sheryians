@@ -5,7 +5,7 @@ let itemsContainer = document.querySelector(".items-container");
 addBtn.onclick = () => {
   let li = document.createElement("li");
   if (inputElemet.value) {
-    li.textContent = inputElemet.value;
+    li.innerHTML = inputElemet.value;
     inputElemet.value = "";
     itemsContainer.appendChild(li);
   }

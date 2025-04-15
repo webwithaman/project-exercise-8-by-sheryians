@@ -8,13 +8,7 @@
   --white: #fff;
 
   /* Theme Fonts */
-  --font-family-1: "Lato", sans-serif;
   --font-family-2: "Poppins", sans-serif;
-  --font-family-3: "Oswald", sans-serif;
-  --font-family-4: "Ubuntu", sans-serif;
-  --font-family-5: "Roboto", sans-serif;
-  --font-family-6: "Nunito", sans-serif;
-  --font-family-7: "Gideon", sans-serif;
 }
 /* CSS Variables End */
 
@@ -29,8 +23,6 @@
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
-  overflow-x: hidden;
-  scroll-behavior: smooth;
   font-family: var(--font-family-2);
 }
 
@@ -39,57 +31,11 @@ body {
 }
 /* Reset Default Styles End */
 
-/* Common Styles for Frequently Used Elements Start */
-a {
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s linear;
-}
-
-ul {
-  list-style: none;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-
-input,
-textarea {
-  outline: none;
-}
-
-img {
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.4;
-}
-
-p {
-  line-height: 1.6;
-}
-/* Common Styles for Frequently Used Elements End */
-
-/* Reusable Components & Utility Classes Start */
-/* Reusable Components & Utility Classes End */
-
 /* Page-Specific Styles Start */
 .site-wrapper {
   padding: 3rem;
   min-height: 100vh;
   background-color: #f5f6fa;
-  /* background-color: #f1f2f6; */
 }
 
 .container {
@@ -112,36 +58,51 @@ p {
   flex: 1;
   padding: 1.2rem;
   border: none;
+  outline: none;
   background-color: #fff;
   font-size: 1.6rem;
   letter-spacing: 0.3px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.126) inset;
+  font-weight: 450;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.112) inset;
+  font-family: var(--font-family-2);
 }
 
-::placeholder {
+.input-btn-box input::placeholder {
   font-family: var(--font-family-2);
-  font-weight: 400;
+  font-weight: 450;
   color: grey;
 }
 
 .input-btn-box button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
   padding: 1.2rem 1.6rem;
   background-color: #353b48;
-
   color: #fff;
   font-family: var(--font-family-2);
   font-size: 1.6rem;
   font-weight: 500;
 }
 
+@media (hover: hover) {
+  .input-btn-box button:hover {
+    background-color: #1b2029;
+  }
+}
+
 h4 {
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 1rem;
+  color: grey;
+  text-align: center;
 }
 
 ul li {
-  background-color: #00a8ff;
+  word-break: break-all;
+  list-style: none;
+  background-color: #2f3640;
   padding: 1rem;
   color: white;
   font-size: 1.6rem;
