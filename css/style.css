@@ -28,19 +28,15 @@ html {
 
 body {
   overflow-x: hidden;
+  padding: 3rem;
+  background-color: #f5f6fa;
 }
 /* Reset Default Styles End */
 
 /* Page-Specific Styles Start */
 .site-wrapper {
-  padding: 3rem;
-  min-height: 100vh;
-  background-color: #f5f6fa;
-}
-
-.container {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -57,7 +53,7 @@ body {
 .input-btn-box input {
   height: 5rem;
   flex: 1;
-  padding: 1.2rem;
+  padding: 1rem;
   border: none;
   outline: 2px solid transparent;
   background-color: #fff;
@@ -73,16 +69,14 @@ body {
 }
 
 .input-btn-box input::placeholder {
-  font-family: var(--font-family-2);
-  font-weight: 450;
-  color: grey;
+  color: rgba(128, 128, 128, 0.769);
 }
 
-.input-btn-box button {
+.input-btn-box #add-btn {
   border: none;
   cursor: pointer;
   transition: all 0.3s linear;
-  padding: 1.2rem 1.6rem;
+  padding: 1rem 1.6rem;
   background-color: #353b48;
   color: #fff;
   font-family: var(--font-family-2);
@@ -96,7 +90,7 @@ body {
   }
 }
 
-h4 {
+.added-items-heading {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -104,14 +98,14 @@ h4 {
   text-align: center;
 }
 
-ul {
+.items-container {
   color: grey;
   font-size: 1.6rem;
   letter-spacing: 0.3px;
   font-weight: 400;
 }
 
-ul li {
+.items-container li {
   word-break: break-all;
   list-style: none;
   background-color: #2f3640;
