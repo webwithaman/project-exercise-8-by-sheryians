@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Background Color Generator</title>
+    <title>add item</title>
 
     <!-- Custom External Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
@@ -14,8 +14,14 @@
   <body>
     <!-- Site Wrapper Start -->
     <div class="site-wrapper">
-      <h1 class="rgb-text"></h1>
-      <button id="change-bg-btn">🎨 Change Background</button>
+      <div class="container">
+        <div class="input-btn-box">
+          <input type="text" placeholder="Enter An Item..." />
+          <button id="add-btn">Add Item</button>
+        </div>
+        <h4>Added Items</h4>
+        <ul class="items-container"></ul>
+      </div>
     </div>
     <!-- Site Wrapper End -->
 
